@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Ingreso al Sistema</div>
+  <div class="panel-body">
+    <div class="form-group">
+      <label for="app-login-usuario-text-1">Usuario:</label>
+      <input id="app-login-usuario-text-1" class="form-control" type="text" placeholder="ingrese su nombre de usuario" [(ngModel)]="usuario.login"
+      />
+    </div>
+    <div class="form-group">
+      <label for="app-login-usuario-password-1">Clave:</label>
+      <input id="app-login-usuario-password-1" class="form-control" type="password" placeholder="ingrese su clave" [(ngModel)]="usuario.clave"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="onIngresar()">Ingresar</button>
+  </div>
+</div>

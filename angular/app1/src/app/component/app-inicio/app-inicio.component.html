@@ -1,0 +1,10 @@
+<div class="container">
+  <span>Bienvenido al sistema</span>
+  <br/>
+  <span>{{autorizacion}}</span>
+  <ul>
+    <li *ngFor="let usu of usuarios">{{usu.firstname}}</li>
+  </ul>
+  <br/>
+  <button type="button" class="btn btn-primary" (click)="getUsuarios()">Consultar Usuarios</button>
+</div>
